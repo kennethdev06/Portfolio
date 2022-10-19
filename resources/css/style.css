@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playball&family=Raleway:wght@100;400;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    text-rendering: optimizeSpeed;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+/* utilities */
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+/* utilities */
+
+/* header */
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(/resources/img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    padding: 0 9%;
+}
+nav{
+    display: flex;
+    /* background-color: #000; */
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .navBrand{
+    color: #fff;
+    font-family: 'Playball', cursive;
+    font-size: 50px;
+}
+ul li{
+    display: inline-block;
+    padding: 13px;
+
+}
+ul li a{
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0.09em;
+    font-weight: 300;
+
+}
+ul li a::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #fff;
+    transition: 0.3s;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+/* end of header */
+/* hero section */
+.hero-section{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+.hero-section h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 80px;
+}
+.hero-section h2 span{
+    color: #2980b9;
+}
+.hero-section p{
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+.social-links a{
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.3s;
+}
+.social-links a:hover{
+    transform: scale(1.1);
+    color: #2980b9;
+}
+.arrow-down{
+    position: absolute;
+    bottom: 0;
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+    animation: bounce 2s infinite;
+
+}
+.arrow-down a{
+    color: #fff;
+    font-size: 24px;
+}
+/* animation arrow */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      bottom:0;
+    }
+    40% {
+        bottom: 15px;
+    }
+    60% {
+        bottom: 15px;
+    }
+  }
+  /* animation arrow */
+.py100{
+    padding: 100px 0;
+}
+.title-menu{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+.title-menu::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 50px;
+    background-color: #2980b9;
+    margin: auto;
+}
+.row{
+    display: flex;
+}
+.about-container{
+    align-items: center;
+}
+.image-me{
+    width: 40%;
+}
+.image-me img{
+    width: 100%;
+    height: auto;
+}
+.about-profile{
+    width: 60%;
+}
+.about-profile h1 span{
+    font-weight: 100;
+}
+.about-profile p:nth-child(2){
+    color: #2980b9;
+}
+.about-profile p:nth-child(3){
+    margin: 10px 0;
+}
+.btn{
+    padding: 10px 30px;
+    border: 1px solid #2980b9;
+    text-align: center;
+    color: #000;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+
+}
+.btn-download{
+    margin-right: 10px;
+}
+.btn-download:hover{
+    background-color: #2980b9;
+}
+.btn-contact{
+    background-color: #2980b9;
+    color: #fff;
+}
+.btn:hover{
+    background-color: #20638f;
+    border: 1px solid transparent;
+    outline: none;
+    color: #fff;
+}
+/* end of about */
+/* progress bar */
+.progress-container{
+    gap: 40px;
+}
+.progress-col1{
+    width: 50%;
+}
+.progress-col2{
+    width: 50%;
+}
+.progress{
+    margin-bottom: 2rem;
+}
+.progress p{
+    font-size: 13px;
+}
+.progress-bar{
+    height: 10px;
+    background-color: #20638f;
+    display: block;
+    border-radius: 24px;
+    position: relative;
+}
+.progress-bar span{
+    position: absolute;
+    top: -20px;
+    right: 0;
+    font-size: 13px;
+
+}
+.progress .html{
+    width: 90%;
+}
+.progress .css{
+    width: 70%;
+}
+.progress .javascript{
+    width: 70%;
+}
+.progress .bootstrap{
+    width: 75%;
+}
+/* end of progress */
+
+/* skills */
+.skills-container{
+    /* gap: 40px; */
+}
+.skills-item{
+    flex: 1;
+    text-align: center;
+    /* border: 1px solid #20638f; */
+    padding: 50px 30px;
+    border-radius: 4px;
+}
+.skills-item h4{
+    margin: 20px 20px;
+}
+.skills-item p{
+    font-size: 13px;
+    color: #363636;
+}
+.skills-item i{
+    font-size: 30px;
+}
+.skills-container .col2{
+    background-color: #4ea1d8;
+    color: #fff;
+}
+.skills-container .col2 p{
+    color: #fff;
+}
+/* hire me */
+.hire-me{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(/resources/img/pic1.jpg);
+    /* height: 150px; */
+    background-size: cover;
+    background-position: center;
+}
+.hireme-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+.hireme-inner h3{
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.hireme-inner a button{
+    padding: 14px 24px;
+    border: none;
+    background-color: #20638f;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
