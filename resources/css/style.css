@@ -21,7 +21,7 @@ li{
 
 /* header */
 header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(/resources/img/banner.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../resources/img/banner.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -274,7 +274,7 @@ ul li a:hover::after{
 }
 /* hire me */
 .hire-me{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(/resources/img/pic1.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../resources/img/pic1.jpg);
     /* height: 150px; */
     background-size: cover;
     background-position: center;
