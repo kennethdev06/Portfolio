@@ -1,0 +1,51 @@
+@media screen and (max-width: 900px) {
+    .hero-section h2{
+        font-size: 65px;
+        padding: 0 20px;
+    }
+    .progress-container{
+        flex-direction: column;
+        gap: 0;
+    }
+    .progress-col1{width: 100%;}
+    .progress-col2{width: 100%;}
+        
+
+}
+@media screen and (max-width: 767px) {
+    a.navBrand{
+        font-size: 40px;
+    }
+    .about-container{flex-direction: column;}
+    .image-me{width: 100%; margin-bottom: 10px;}
+    .about-profile{width: 100%;}
+    .contact-info{width: 100%;}
+    .contact-form{width: 100%;}
+    .progress-col1{width: 100%;}
+    .skills-container{flex-direction: column;}
+    .skills-item{margin-bottom: 10px;}
+    .py100{padding: 80px 0;}
+    .contact-container{flex-direction: column;}
+    .container{padding: 0 6%;}
+    .navlinks{
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        left: 0;
+        z-index: 999;
+        display: none;
+        padding: 1rem;
+        background-color: #2980b9;
+    }
+    .navlinks li{
+        display: block;
+    }
+    .navlinks a{
+        display: inline-block;
+    }
+    .menubar{
+        display: block;
+    }
+
+
+}

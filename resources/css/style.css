@@ -21,7 +21,7 @@ li{
 
 /* header */
 header{
-    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../resources/img/banner.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(/resources/img/banner.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -37,12 +37,23 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
+/* menubar */
+.menubar{
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+/*menubar  */
 nav .navBrand{
     color: #fff;
     font-family: 'Playball', cursive;
     font-size: 50px;
 }
-ul li{
+.navlinks{
+    display: block;
+}
+.navlinks li{
     display: inline-block;
     padding: 13px;
 
@@ -108,7 +119,8 @@ ul li a:hover::after{
     text-decoration: none;
     color: #fff;
     transition: 0.3s;
-    animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+            animation: bounce 2s infinite;
 
 }
 .arrow-down a{
@@ -116,9 +128,9 @@ ul li a:hover::after{
     font-size: 24px;
 }
 /* animation arrow */
-@keyframes bounce {
+@-webkit-keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
-      bottom:0;
+    bottom:0;
     }
     40% {
         bottom: 15px;
@@ -126,7 +138,18 @@ ul li a:hover::after{
     60% {
         bottom: 15px;
     }
-  }
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+    bottom:0;
+    }
+    40% {
+        bottom: 15px;
+    }
+    60% {
+        bottom: 15px;
+    }
+}
   /* animation arrow */
 .py100{
     padding: 100px 0;
@@ -245,9 +268,6 @@ ul li a:hover::after{
 /* end of progress */
 
 /* skills */
-.skills-container{
-    /* gap: 40px; */
-}
 .skills-item{
     flex: 1;
     text-align: center;
@@ -274,7 +294,7 @@ ul li a:hover::after{
 }
 /* hire me */
 .hire-me{
-    background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../resources/img/pic1.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(/resources/img/pic1.jpg);
     /* height: 150px; */
     background-size: cover;
     background-position: center;
@@ -302,4 +322,76 @@ ul li a:hover::after{
     font-weight: bold;
     cursor: pointer;
 
+}
+
+/* contact */
+
+.contact-info{
+    width: 40%;
+
+}
+.contact-inner{
+    display: flex;
+    flex-direction: column;
+}
+.contact-inner .contact{
+    margin-bottom: 20px;
+}
+.fname::before{
+    font-family: "Font Awesome 5 Free";
+    content:"\f007";
+    font-weight: 700;
+    margin-right: 10px;
+}
+.email::before{
+    font-family: "Font Awesome 5 Free";
+    content:"\f0e0";
+    font-weight: 700;
+    margin-right: 10px;
+}
+.number::before{
+    font-family: "Font Awesome 5 Free";
+    content:"\f095";
+    font-weight: 700;
+    margin-right: 10px;
+}.address::before{
+    font-family: "Font Awesome 5 Free";
+    content:"\f2b9";
+    font-weight: 700;
+    margin-right: 10px;
+}
+.contact-form{
+    width: 60%;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"],
+input[type="email"]{
+    margin-bottom: 10px;
+    padding: 1rem;
+}
+.submit-btn{
+    padding: 1rem;
+    margin-top: 10px;
+    background-color: #20638f;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.submit-btn:hover{
+    background-color: #2980b9;
+}
+textarea{
+    padding: 10px;
+}
+footer{
+    background-color: #000;
+    color: #fff;
+    font-size: 13px;
+    padding: 1rem;
+    text-align: center;
 }

@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- font-awesome -->
-    <script src="https://kit.fontawesome.com/b443663f5b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- css -->
     <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/media.css">
+
     <title>Portfolio</title>
 </head>
 <body>
@@ -16,7 +18,8 @@
     <header id="#home">
         <nav class="container">
             <a href="" class="navBrand">Portfolio</a> <!-- navBrand -->
-            <ul>  <!-- navLinks -->
+            <i class="fa-solid fa-bars menubar" onclick="show()"></i>
+            <ul class="navlinks" id="navlinks">  <!-- navLinks -->
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -64,13 +67,14 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, deleniti vitae voluptatum rem quae sapiente!</p><br>
                     <a href="" class="btn btn-download">Download CV</a>
                     <a href="" class="btn btn-contact">Contact me</a>
+
                 </div>
             </div>
         </div>
     </section>
     <!-- end of about -->
     <!-- Progress skills -->
-    <section id="skills">
+    <section>
         <div class="container">
             <div class="row progress-container">
                 <div class="progress-col1">
@@ -98,7 +102,7 @@
     </section>
     <!--end of Progress skills -->
 
-    <section class="py100">
+    <section class="py100" id="skills">
         <div class="container ">
             <h1 class="title-menu">Skills</h1>
             <div class="row skills-container">
@@ -132,12 +136,33 @@
     </section>
 
     <!-- contact -->
-    <section class="py100">
+    <section class="py100" id="contact">
+        <h2 class="title-menu">Contact</h2>
         <div class="container">
             <div class="row contact-container">
-
+                <div class="contact-info">
+                    <div class="contact-inner">
+                        <p class="contact fname">kenneth caina</p>
+                        <p class=" contact email">cainakenneth06@gmail.com</p>
+                        <p class="contact number">+639040521</p>
+                        <p class="contact address">Tugbok, Davao City</p>
+                    </div>
+                </div>
+                <form action="" class="contact-form">
+                    <input type="text" placeholder="Name: *" required>
+                    <input type="email" placeholder="Email: *" required>
+                    <textarea cols="20" rows="10" placeholder="Leave a message"></textarea>
+                    <button type="submit" class="submit-btn">Send</button>
+                </form>
             </div>
         </div>
     </section>
+
+    <footer>
+        <p>Portfolio of Kenneth M. Caina</p>
+    </footer>
+
+
+<script src="./resources/app/script.js"></script>
 </body>
 </html>
